@@ -74,3 +74,32 @@
   border-style: solid;
   border-color: rgb(47,51,54);
 }
+.wd-horizontal-line4{
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  width: 100%;
+}
+.wd-dot{
+  text-align: right;
+  margin-right: 16px;
+}
+.wd-news-char{
+  margin-left: 16px;
+}
+.wd-news-gray{
+  color: rgb(110,118,125);
+}
+.wd-size{
+  font-size: 15px;
+}
+.wd-news-75{
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+.wd-news{
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
