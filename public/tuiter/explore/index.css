@@ -93,13 +93,29 @@
 .wd-size{
   font-size: 15px;
 }
-.wd-news-75{
-  width: 50%;
+.wd-news-50{
+  width: 75%;
   float: left;
-  text-align: right;
+  text-align: left;
 }
 .wd-news{
   width: 100px;
   height: 100px;
   margin-right: 16px;
+  margin-top: 16px;
+  border-radius: 10px;
+  float: right;
+}
+.wd-logo{
+  width: 10px;
+  height: 10px;
+  margin-top: 16px;
+}
+.wd-logo2{
+  width: 15px;
+  height: 15px;
+  margin-top: 16px;
+}
+.wd-news-top{
+  margin-top: 16px;
 }
