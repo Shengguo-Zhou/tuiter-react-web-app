@@ -18,3 +18,15 @@
   border-style: solid;
   border-color: rgb(47,51,54);
 }
+.wd-frame2{
+  border-color: rgb(47,51,54);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: 0;
+  margin-right: 10%;
+  margin-top: 0;
+  color: white;
+  height: 343px;
+  width: 504px;
+  border-radius: 20px;
+}
