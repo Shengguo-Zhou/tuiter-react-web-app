@@ -1,0 +1,20 @@
+.wd-blackbody{
+  background-color: black;
+}
+.wd-frame{
+  border-color: rgb(47,51,54);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: 50px;
+  margin-right: 20%;
+  margin-top: 10px;
+  color: white;
+}
+.wd-background-gray{
+  background-color: rgb(47,51,54);
+}
+.wd-horizontal-line3{
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: rgb(47,51,54);
+}
