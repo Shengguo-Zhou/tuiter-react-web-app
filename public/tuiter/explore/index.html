@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>explore</title>
@@ -12,7 +12,7 @@
 <body>
 <div class="container pt-2">
   <div class="row">
-    <div class="col-2">
+    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-1 wd-col-left">
 
       <div class="list-group">
         <a href="#"
@@ -111,7 +111,7 @@
 
     </div>
 
-    <div class="col-6">
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-xs-2">
 
       <div class="row">
         <div class="col-10">
@@ -220,82 +220,92 @@
 
     </div>
 
-    <div class="col-4 d-none d-lg-block d-xl-block d-xxl-block">
+    <div class="col-xxl-4 col-xl-4 col-lg-3 d-none d-lg-block d-xl-block d-xxl-block">
+
       <ul class="list-group">
-        <li class="list-group-item fw-bold"> Who to follow</li>
+          <li class="list-group-item fw-bold"> Who to follow</li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="bb_log.png" class="rounded-circle wd-news">
+              </div>
+              <div class="col-6">
+                <div class="fw-bold">Java <i class="fas fa-check-circle"></i></div>
+                <div class="text-secondary">@Java</div>
+              </div>
+              <div class="col-2">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="nyt_logo.png" class="rounded-circle wd-news">
+              </div>
+              <div class="col-6">
+                <div class="fw-bold">Relativity Space <i class="fas fa-check-circle"></i></div>
+                <div class="text-secondary">@relativityspace</div>
+              </div>
+              <div class="col-2">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="NASA_logo.png" class="rounded-circle wd-news">
+              </div>
+              <div class="col-6">
+                <div class="fw-bold">Virgin Galactic <i class="fas fa-check-circle"></i></div>
+                <div class="text-secondary">@virgingalactic</div>
+              </div>
+              <div class="col-2">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="news4.jpeg" class="rounded-circle wd-news">
+              </div>
+              <div class="col-6">
+                <div class="fw-bold">Tesla <i class="fas fa-check-circle"></i></div>
+                <div class="text-secondary">@Tesla</div>
+              </div>
+              <div class="col-2">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-2">
+                <img src="news3.png" class="rounded-circle wd-news">
+              </div>
+              <div class="col-6">
+                <div class="fw-bold">NASA<i class="fas fa-check-circle"></i></div>
+                <div class="text-secondary">@NASA</div>
+              </div>
+              <div class="col-2">
+                <button class="btn btn-primary rounded-pill">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row text-primary">
+              Show more
+            </div>
+          </li>
+        </ul>
+      <p class="text-black-50 wd-news-top" style="font-size: smaller; margin-left: 15px;">
+          Terms of Service &nbsp; &nbsp; Privacy Policy &nbsp; &nbsp; Cookie Policy </br>
+          Accessibility &nbsp; &nbsp; Ads info &nbsp; &nbsp; More ...</br>
+          &copy; 2023 Twitter, Inc.
+        </p>
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="bb_log.png" class="rounded-circle wd-news">
-            </div>
-            <div class="col-6">
-              <div class="fw-bold">Java <i class="fas fa-check-circle"></i></div>
-              <div class="text-secondary">@Java</div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="nyt_logo.png" class="rounded-circle wd-news">
-            </div>
-            <div class="col-6">
-              <div class="fw-bold">Relativity Space <i class="fas fa-check-circle"></i></div>
-              <div class="text-secondary">@relativityspace</div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="NASA_logo.png" class="rounded-circle wd-news">
-            </div>
-            <div class="col-6">
-              <div class="fw-bold">Virgin Galactic <i class="fas fa-check-circle"></i></div>
-              <div class="text-secondary">@virgingalactic</div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="news4.jpeg" class="rounded-circle wd-news">
-            </div>
-            <div class="col-6">
-              <div class="fw-bold">Tesla <i class="fas fa-check-circle"></i></div>
-              <div class="text-secondary">@Tesla</div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </div>
-          </div>
-        </li>
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="news3.png" class="rounded-circle wd-news">
-            </div>
-            <div class="col-6">
-              <div class="fw-bold">NASA<i class="fas fa-check-circle"></i></div>
-              <div class="text-secondary">@NASA</div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary rounded-pill">Follow</button>
-            </div>
-          </div>
-        </li>
-
-      </ul>
     </div>
 
   </div>
