@@ -33,6 +33,11 @@
   height: 28px;
   width: 28px;
 }
+.wd-gear-search{
+  margin-top: 10px;
+  height: 32px;
+  width: 32px;
+}
 .wd-words-style{
   text-decoration: none
 }
@@ -79,10 +84,12 @@
   text-align: left;
 }
 .wd-news{
+  width: 50px;
+  height: 50px;
+}
+.wd-news2{
   width: 100px;
   height: 100px;
-  margin-right: 16px;
-  margin-top: 16px;
   border-radius: 10px;
   float: right;
 }
