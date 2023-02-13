@@ -180,8 +180,9 @@
   border-left: 0;
   border-right: 0;
   color: black;
-  border-bottom: 3px;
-  border-color: rgb(29,161,242);;
+  border-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom-color: rgb(29,161,242);
 }
 .nav-link.override-link{
   border-top: 0;
@@ -189,7 +190,7 @@
   border-right: 0;
   color: #657786;
   border-bottom: 3px;
-  border-color: rgb(29,161,242);;
+  border-color: rgb(29,161,242);
 }
 .nav-item.over-iterm{
   border-top: 0;
@@ -200,17 +201,17 @@
   border-color: rgb(29,161,242);
 }
 .nav.override-nav{
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
   color: black;
   border-bottom: 3px;
   border-color: rgb(29,161,242);
 }
 .line-in-blue{
-  color: #1DA1F2;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 0;
-  height: 20px;
+  color: blue;
+  margin-left: 15px;
+  width: 60px;
+  margin-bottom: 0;
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
 }
