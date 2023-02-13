@@ -111,5 +111,106 @@
   left: 10px;
 }
 .wd-col-left{
-  background: green;
+  background: transparent;
+}
+.list-group-item.override-lgi {
+  border-color: white;
+}
+.list-group-item.override-lgi.override-lgii {
+  background-color: rgb(225, 232, 237);
+  border-color: rgb(225, 232, 237);
+}
+.active.override-active-color{
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+.twitter-blue{
+  background: rgb(29,161,242);
+}
+.twitter-char{
+  color: white;
+  font-weight: bold;
+}
+.fa-house-user.override-lg-color{
+
+}
+.fa-check-circle.override-circle-blue{
+  color: rgb(29,161,242);
+}
+.fa-check-circle.override-circle-gold{
+  color: #D4AF37;
+}
+.list-group-item.override-radius{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 25px;
+}
+.list-group-item.override-radius2{
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 48px;
+}
+.list-group-item.override-border{
+  border-bottom: 0;
+}
+.bottom-0.override-bottom{
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size: small;
+}
+.bottom-0.override-bottom2{
+  margin-bottom: 30px;
+  margin-left: 15px;
+  font-size: xx-large;
+}
+.nav-tabs.override-tab{
+  border: 0;
+  color: black;
+  font-weight: bold;
+}
+.nav-item.override-item{
+  color: black;
+}
+.form-control.override-search-color{
+  background-color: #E1E8ED;
+}
+.active.override-for-you{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  border-bottom: 3px;
+  border-color: rgb(29,161,242);;
+}
+.nav-link.override-link{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #657786;
+  border-bottom: 3px;
+  border-color: rgb(29,161,242);;
+}
+.nav-item.over-iterm{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  border-bottom: 3px;
+  border-color: rgb(29,161,242);
+}
+.nav.override-nav{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: black;
+  border-bottom: 3px;
+  border-color: rgb(29,161,242);
+}
+.line-in-blue{
+  color: #1DA1F2;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  height: 20px;
 }

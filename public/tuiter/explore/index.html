@@ -16,21 +16,22 @@
 
       <div class="list-group">
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <i class="fab fa-twitter"></i></a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <div class="row">
             <div class="col-2">
-              <i class="fas fa-house-user"></i>
+              <i class="fas fa-house-user override-lg-color"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">Home</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">Home</span>
             </div>
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action active">
+           class="list-group-item override-lgi list-group-item-action active
+           override-active-color">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-hashtag"></i>
@@ -41,73 +42,73 @@
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action ">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-bell"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">Notification</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">Notification</span>
             </div>
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-envelope"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">Messages</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">Messages</span>
             </div>
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-bookmark"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">Bookmarks</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">Bookmarks</span>
             </div>
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-list"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">Lists</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">Articles</span>
             </div>
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-user"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">Profile</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">Profile</span>
             </div>
           </div>
         </a>
         <a href="#"
-           class="list-group-item list-group-item-action">
+           class="list-group-item override-lgi list-group-item-action">
           <div class="row">
             <div class="col-2">
               <i class="fas fa-comment-dots"></i>
             </div>
             <div class="col-8">
-              <span class="d-none d-xl-block d-xxl-block">More</span>
+              <span class="d-none d-xl-block d-xxl-block fw-light">More</span>
             </div>
           </div>
         </a>
       </div>
-      <button class="btn btn-primary w-100 mt-2 rounded-pill">Tweet</button>
+      <button class="btn twitter-blue twitter-char w-100 mt-2 rounded-pill">Tweet</button>
 
     </div>
 
@@ -116,7 +117,8 @@
       <div class="row">
         <div class="col-10">
           <div class="position-relative">
-            <input class="form-control rounded-pill ps-5" placeholder="Search Twitter"/>
+            <input class="form-control override-search-color rounded-pill ps-5"
+                   placeholder="Search Twitter"/>
             <i class="fas fa-search position-absolute wd-search-twitter"></i>
           </div>
         </div>
@@ -126,30 +128,34 @@
         </div>
       </div>
 
-      <ul class="nav nav-tabs mt-2 mb-2">
+      <ul class="nav override-nav nav-tabs override-tab mt-2 mb-2">
         <li class="nav-item">
-          <a class="nav-link active" href="#">For you</a>
+          <a class="nav-link active override-for-you" href="#">For you</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Trending</a>
+        <li class="nav-item override-item">
+          <a class="nav-link override-for-you override-link" href="#">Trending</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+        <li class="nav-item override-item">
+          <a class="nav-link override-for-you override-link" href="#">News</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sports</a>
+        <li class="nav-item override-item">
+          <a class="nav-link override-for-you override-link" href="#">Sports</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Entertainment</a>
+        <li class="nav-item override-item">
+          <a class="nav-link override-for-you override-link" href="#">Entertainment</a>
         </li>
       </ul>
+
       <div class="position-relative">
         <img src="starship.png" width="100%"/>
-        <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
+        <p class="position-absolute bottom-0 left-0 override-bottom text-white">
+          Tennis Tournament &#x2022; LIVE</p>
+        <p class="position-absolute bottom-0 left-0 override-bottom2 text-white">
+          SpaceX's Starship</p>
       </div>
 
       <ul class="list-group">
-        <li class="list-group-item">
+        <li class="list-group-item override-border">
           <div class="row">
             <div class="col-10">
               <div class="text-secondary">
@@ -167,11 +173,11 @@
               <img class="float-end wd-news2" src="news1.png"></div>
           </div>
         </li>
-        <li class="list-group-item">
+        <li class="list-group-item override-border">
           <div class="row">
             <div class="col-8">
               <div class="fw-bolder">
-                JavaScript <i class="fas fa-check-circle"></i>
+                JavaScript <i class="fas fa-check-circle override-circle-gold"></i>
                 <span class="text-secondary fw-normal">- 2h</span>
               </div>
               <div class="fw-bolder">
@@ -183,7 +189,7 @@
               <img class="float-end wd-news2" src="news2.png"></div>
           </div>
         </li>
-        <li class="list-group-item">
+        <li class="list-group-item override-border">
           <div class="row">
             <div class="col-8">
               <div class="text-secondary">
@@ -198,7 +204,7 @@
               <img class="float-end wd-news2" src="logo3.png"></div>
           </div>
         </li>
-        <li class="list-group-item">
+        <li class="list-group-item override-border">
           <div class="row">
             <div class="col-8">
               <div class="text-secondary">
@@ -216,6 +222,24 @@
               <img class="float-end wd-news2" src="news4.jpeg"></div>
           </div>
         </li>
+        <li class="list-group-item override-border">
+          <div class="row">
+            <div class="col-9">
+              <div class="text-secondary">
+                Trending in Business and finance
+              </div>
+              <div class="fw-bolder">
+                # Durham <i class="fas fa-check-circle override-circle-gold"></i>
+                <span class="text-secondary fw-normal">- 2h</span>
+              </div>
+              <div class="text-secondary">
+                <i class="fas fa-ad"></i>
+                <span style="font-size: small">Promoted by NEON</span>
+              </div>
+            </div>
+            <div class="col-2 wd-dot" style="float: right;">&#x2022; &#x2022; &#x2022;</div>
+          </div>
+        </li>
       </ul>
 
     </div>
@@ -223,36 +247,41 @@
     <div class="col-xxl-4 col-xl-4 col-lg-3 d-none d-lg-block d-xl-block d-xxl-block">
 
       <ul class="list-group">
-          <li class="list-group-item fw-bold"> Who to follow</li>
-          <li class="list-group-item">
+          <li class="list-group-item override-lgi
+          override-lgii fw-bold override-radius"> Who to follow</li>
+          <li class="list-group-item override-lgi override-lgii">
             <div class="row">
               <div class="col-2">
                 <img src="bb_log.png" class="rounded-circle wd-news">
               </div>
               <div class="col-6">
-                <div class="fw-bold">Java <i class="fas fa-check-circle"></i></div>
+                <div class="fw-bold">Java
+                  <i class="fas fa-check-circle override-circle-blue"></i></div>
                 <div class="text-secondary">@Java</div>
               </div>
               <div class="col-2">
-                <button class="btn btn-primary rounded-pill">Follow</button>
+                <button class="btn rounded-pill fw-bold"
+                        style="background-color: black; color: white;">Follow</button>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item override-lgi override-lgii">
             <div class="row">
               <div class="col-2">
                 <img src="nyt_logo.png" class="rounded-circle wd-news">
               </div>
               <div class="col-6">
-                <div class="fw-bold">Relativity Space <i class="fas fa-check-circle"></i></div>
+                <div class="fw-bold">Relativity Space
+                  <i class="fas fa-check-circle override-circle-blue"></i></div>
                 <div class="text-secondary">@relativityspace</div>
               </div>
               <div class="col-2">
-                <button class="btn btn-primary rounded-pill">Follow</button>
+                <button class="btn rounded-pill fw-bold"
+                        style="background-color: black; color: white;">Follow</button>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item override-lgi override-lgii">
             <div class="row">
               <div class="col-2">
                 <img src="NASA_logo.png" class="rounded-circle wd-news">
@@ -262,40 +291,52 @@
                 <div class="text-secondary">@virgingalactic</div>
               </div>
               <div class="col-2">
-                <button class="btn btn-primary rounded-pill">Follow</button>
+                <button class="btn rounded-pill fw-bold"
+                        style="background-color: black; color: white;">Follow</button>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item override-lgi override-lgii">
             <div class="row">
               <div class="col-2">
-                <img src="news4.jpeg" class="rounded-circle wd-news">
+                <img src="news4.jpeg" class="wd-news"
+                     style="border-radius: 10px;">
               </div>
               <div class="col-6">
-                <div class="fw-bold">Tesla <i class="fas fa-check-circle"></i></div>
+                <div class="fw-bold">Tesla
+                  <i class="fas fa-check-circle override-circle-gold"></i></div>
                 <div class="text-secondary">@Tesla</div>
               </div>
               <div class="col-2">
-                <button class="btn btn-primary rounded-pill">Follow</button>
+                <button class="btn rounded-pill fw-bold"
+                        style="background-color: black; color: white;">Follow</button>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
+          <li class="list-group-item override-lgi override-lgii">
             <div class="row">
               <div class="col-2">
                 <img src="news3.png" class="rounded-circle wd-news">
               </div>
               <div class="col-6">
-                <div class="fw-bold">NASA<i class="fas fa-check-circle"></i></div>
+                <div class="fw-bold">NASA
+                  <i class="fas fa-check-circle override-circle-gold"></i></div>
                 <div class="text-secondary">@NASA</div>
+                <div>
+                  <i class="fas fa-ad"></i><span class="fw-light text-secondary fst-italic"
+                style="font-size: small">
+                  Promoted</span>
+                </div>
               </div>
               <div class="col-2">
-                <button class="btn btn-primary rounded-pill">Follow</button>
+                <button class="btn rounded-pill fw-bold"
+                        style="background-color: black; color: white;">Follow</button>
               </div>
             </div>
           </li>
-          <li class="list-group-item">
-            <div class="row text-primary">
+          <li class="list-group-item override-lgi override-lgii
+          override-radius2">
+            <div class="row" style="color: rgb(29,161,242); margin-left: 7px">
               Show more
             </div>
           </li>
