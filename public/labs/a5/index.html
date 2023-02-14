@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+<!--  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>-->
+  <script src="../../vendors/jquery/jquery-3.6.3.min.js"></script>
 </head>
 <body>
 <h2>Embedded script tag</h2>
@@ -29,6 +31,24 @@
   document.write(html);
 </script>
 
+<script>
+  const init = () => {
+    console.log('Hello world from jQuery');
+    const bindById = $('#bind-by-id');
+    const bindByClass = $('.bind-by-class');
+    console.log('Binding to DOM');
+    console.log(bindById);
+    console.log(bindByClass);
+  }
+  $(init);
+</script>
+
+<h2 id="bind-by-id">
+  Binding by ID</h2>
+<h3 className="bind-by-class">
+  Binding 1 by Class</h3>
+<h3 className="bind-by-class">
+  Binding 2 by Class</h3>
 
 
 
