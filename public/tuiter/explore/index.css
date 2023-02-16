@@ -114,15 +114,15 @@
   background: transparent;
 }
 .list-group-item.override-lgi {
-  border-color: white;
+  border-color: #657786;
 }
 .list-group-item.override-lgi.override-lgii {
   background-color: rgb(225, 232, 237);
   border-color: rgb(225, 232, 237);
 }
 .active.override-active-color{
-  background: white;
-  color: black;
+  background: rgb(29,161,242);;
+  color: white;
   font-weight: bold;
 }
 .twitter-blue{
