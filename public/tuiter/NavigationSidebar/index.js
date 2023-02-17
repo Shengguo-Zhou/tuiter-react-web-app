@@ -1,3 +1,5 @@
+import barItems from "../NavigationSidebar/NavSideBarItem.js";
+
 const NavigationSidebar = () => {
   return(`
    <div class="list-group">
@@ -29,71 +31,22 @@ const NavigationSidebar = () => {
         </div>
       </a>
         
-      <a class="list-group-item override-lgi list-group-item-action" href="#">
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-bell"></i>
+     ${
+        barItems.map(item => {
+          return `
+        <a class="list-group-item override-lgi list-group-item-action" href="#">
+          <div class="row">
+            <div class="col-2">
+              <i class="${item.class}"></i>
+            </div>
+            <div class="col-8">
+              <span class="d-none d-xl-block d-xxl-block fw-light">${item.name}</span>
+            </div>
           </div>
-          <div class="col-8">
-            <span class="d-none d-xl-block d-xxl-block fw-light">Notification</span>
-          </div>
-        </div>
-      </a>
-        
-      <a class="list-group-item override-lgi list-group-item-action" href="#">
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="col-8">
-            <span class="d-none d-xl-block d-xxl-block fw-light">Messages</span>
-          </div>
-        </div>
-      </a>
-        
-      <a class="list-group-item override-lgi list-group-item-action" href="#">
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-bookmark"></i>
-          </div>
-          <div class="col-8">
-            <span class="d-none d-xl-block d-xxl-block fw-light">Bookmarks</span>
-          </div>
-        </div>
-      </a>
-        
-      <a class="list-group-item override-lgi list-group-item-action" href="#">
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-list"></i>
-          </div>
-          <div class="col-8">
-            <span class="d-none d-xl-block d-xxl-block fw-light">Articles</span>
-          </div>
-        </div>
-      </a>
-        
-      <a class="list-group-item override-lgi list-group-item-action" href="#">
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-user"></i>
-          </div>
-          <div class="col-8">
-            <span class="d-none d-xl-block d-xxl-block fw-light">Profile</span>
-          </div>
-        </div>
-      </a>
-        
-      <a class="list-group-item override-lgi list-group-item-action" href="#">
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-comment-dots"></i>
-          </div>
-          <div class="col-8">
-            <span class="d-none d-xl-block d-xxl-block fw-light">More</span>
-          </div>
-        </div>
-      </a>
+        </a>`
+        }).join('')
+      }
+      
    </div>
    
    <div class="d-grid mt-2">
