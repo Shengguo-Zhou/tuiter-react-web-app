@@ -4,7 +4,7 @@ const singleList = (who) => {
         style="background-color: #14171A; border-color: rgb(32,33,33);">
           <div class="row">
             <div class="col-2">
-              <img src="${who.avatarIcon}" class="rounded-circle wd-news">
+              <img src="${who.avatarIcon}" class="wd-news rounded-circle">
             </div>
             <div class="col-6">
               <div class="fw-bold">${who.userName}

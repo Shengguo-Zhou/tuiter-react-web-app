@@ -1,19 +1,39 @@
 export default [
+  {class: 'fab fa-twitter',
+    name:'',
+    href:'#'
+  },
+  {class: 'fas fa-house-user override-lg-color',
+    name:'Home',
+    href:'../home/index.html'
+  },
+  {class: 'fas fa-hashtag',
+    name:'Explore',
+    href:'../explore/index.html'
+  },
   {class: 'fas fa-bell',
-    name:'Notification'
+    name:'Notification',
+    href:'#'
   },
   {class: 'fas fa-envelope',
-    name:'Messages'
+    name:'Messages',
+    href:'#'
   },
   {class: 'fas fa-bookmark',
-    name:'Bookmarks'
+    name:'Bookmarks',
+    href: '#'
   },
   {class: 'fas fa-list',
-    name:'Articles'
+    name:'Articles',
+    href: '#'
   },
   {class: 'fas fa-user',
-    name:'Profile'},
+    name:'Profile',
+    href: '#'
+  },
   {class: 'fas fa-comment-dots',
-    name:'More'},
+    name:'More',
+    href: '#'
+  },
 
 ];
