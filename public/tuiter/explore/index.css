@@ -117,7 +117,7 @@
   border-color: #657786;
 }
 .list-group-item.override-lgi.override-lgii {
-  background-color: rgb(225, 232, 237);
+  background-color: black;
   border-color: rgb(225, 232, 237);
 }
 .active.override-active-color{
@@ -132,8 +132,8 @@
   color: white;
   font-weight: bold;
 }
-.fa-house-user.override-lg-color{
-
+.twitter-char-color-grey{
+  color: #657786;
 }
 .fa-check-circle.override-circle-blue{
   color: rgb(29,161,242);
@@ -214,4 +214,7 @@
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
+}
+.final-grey{
+  background-color: rgb(32,33,33);
 }
