@@ -1,12 +1,13 @@
 import barItems from "../NavigationSidebar/NavSideBarItem.js";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
   return(`
    <div class="list-group">       
      ${
         barItems.map(item => {
           return `
-        <a class="list-group-item override-lgi list-group-item-action" 
+        <a class="list-group-item override-lgi list-group-item-action 
+        ${active === item.name ? "active" : ""}" 
         href="${item.href}">
           <div class="row">
             <div class="col-2">
