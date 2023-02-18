@@ -1,7 +1,7 @@
 export default [
   {class: 'fab fa-twitter',
     name:'',
-    href:'#'
+    href:'../explore/index.html'
   },
   {class: 'fas fa-house-user override-lg-color',
     name:'Home',
@@ -13,27 +13,27 @@ export default [
   },
   {class: 'fas fa-bell',
     name:'Notification',
-    href:'#'
+    href:'../explore/index.html'
   },
   {class: 'fas fa-envelope',
     name:'Messages',
-    href:'#'
+    href:'../explore/index.html'
   },
   {class: 'fas fa-bookmark',
     name:'Bookmarks',
-    href: '#'
+    href:'../explore/index.html'
   },
   {class: 'fas fa-list',
     name:'Articles',
-    href: '#'
+    href:'../explore/index.html'
   },
   {class: 'fas fa-user',
     name:'Profile',
-    href: '#'
+    href:'../explore/index.html'
   },
   {class: 'fas fa-comment-dots',
     name:'More',
-    href: '#'
+    href:'../explore/index.html'
   },
 
 ];

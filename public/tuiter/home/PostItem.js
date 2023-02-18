@@ -39,7 +39,7 @@ export default [
     picture: '../bookmarks/p4.png',
     secondStress:'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
     secondParagrapg:'',
-    lastLogo:'netflix.com',
+    lastLogo:'rt.com',
     comment:'99K',
     retweet:'8.8K',
     love:'39.9K',

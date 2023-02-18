@@ -1,11 +1,12 @@
 import posts from "../home/PostItem.js";
-
+import SizeCheck from "../home/SizeCheck.js";
 const PostList = () => {
   return(`
       ${posts.map(
           post => {
             return(`
-            <div style="height: 550px">
+            <div style="height: ${post.secondParagrapg === '' ? 500 : 550}px; 
+            border-style: solid; border-width: 1px; border-color: #34383c;">
                 <div style="width: 80px; float: left">
                   <img src="${post.logo}" class="wd-avatar"></div>
                   <div style="margin-left: 80px">
@@ -24,12 +25,12 @@ const PostList = () => {
                     <p style="font-size: 15px; margin-bottom: 28px; width: 506px;">
                     ${post.firstParagraph}
                     <span class="text-primary">${post.blueStress}</span></p>
-                    <div class="wd-frame2">
+                    
+                    <div class= ${SizeCheck(post)}>
                       <img src="${post.picture}" class="wd-picture">
                       <div class="wd-into"><b>${post.secondStress}</b></div>
                       <div class="wd-gray wd-into">${post.secondParagrapg}</div>
-                      <i class="fas fa-link wd-gray" style="margin-left: 12px; 
-                      margin-right: 0; height: 15px; width: 15px;"></i>
+                      <i class="fas fa-link wd-gray" style="margin-left: 12px; margin-right: 0;"></i>
                       <span class="wd-gray" style="font-size: 15px">${post.lastLogo}</span>
                     </div>
                     
@@ -56,7 +57,7 @@ const PostList = () => {
                 </div>
                 
                 </div>
-              </div>
+            </div>
             `);
           }
       ).join('')}

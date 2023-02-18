@@ -26,6 +26,30 @@
   margin-right: 10%;
   margin-top: 0;
   color: white;
+  height: 263px;
+  width: 504px;
+  border-radius: 20px;
+}
+.wd-frame3{
+  border-color: rgb(47,51,54);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: 0;
+  margin-right: 10%;
+  margin-top: 0;
+  color: white;
+  height: 293px;
+  width: 504px;
+  border-radius: 20px;
+}
+.wd-frame4{
+  border-color: rgb(47,51,54);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: 0;
+  margin-right: 10%;
+  margin-top: 0;
+  color: white;
   height: 343px;
   width: 504px;
   border-radius: 20px;
