@@ -54,7 +54,7 @@ const PostList = () => {
                   <a href="#" style="text-decoration: none;">
                   <i class="fas fa-share-square"></i></a>
                   </div>
-                </div>
+                  </div>
                 
                 </div>
             </div>
