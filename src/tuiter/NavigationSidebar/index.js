@@ -2,7 +2,6 @@ import React from "react";
 import items from "./NavigationSidebarItem.js";
 import SingleIndex from "./SingleIndex.js";
 import {useLocation} from "react-router";
-import {Link} from "react-router-dom";
 
 const NavigationSidebar = () => {
       const {pathname} = useLocation();
@@ -12,8 +11,7 @@ const NavigationSidebar = () => {
       return (
       <>
         <div className="list-group">
-          {
-          items.map(item => {
+          {items.map(item => {
             return (
                 <>
                   <div className="list-group">

@@ -1,6 +1,4 @@
 import React from "react";
-import PostSummaryList from "../PostSummaryList/index.js"
-import NavigationSidebar from "../NavigationSidebar/index.js";
 
 function HomeScreen() {
   return (
