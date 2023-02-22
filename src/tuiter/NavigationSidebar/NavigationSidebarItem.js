@@ -1,39 +1,42 @@
 export default [
-  {class: 'fab fa-twitter',
+  {class: 'bi bi-twitter',
     name:'',
-    href:'../explore/index.html'
+    href:'/'
   },
-  {class: 'fas fa-house-user override-lg-color',
+  {class: 'bi bi-house-fill',
     name:'Home',
-    href:'../home/index.html'
+    href:'/tuiter/home'
   },
-  {class: 'fas fa-hashtag',
+  {class: 'bi bi-hash',
     name:'Explore',
-    href:'../explore/index.html'
+    href:'/tuiter/explore'
   },
-  {class: 'fas fa-bell',
+  {class: 'bi bi-bell-fill',
     name:'Notification',
-    href:'../tuiter'
+    href:'/'
   },
-  {class: 'fas fa-envelope',
+  {class: 'bi bi-envelope-fill',
     name:'Messages',
-    href:'../tuiter'
+    href:'/'
   },
-  {class: 'fas fa-bookmark',
+  {class: 'bi bi-bookmark-fill',
     name:'Bookmarks',
-    href:'../tuiter'
+    href:'/'
   },
-  {class: 'fas fa-list',
+  {class: 'bi bi-bag-check-fill',
     name:'Articles',
-    href:'../tuiter'
+    href:'/'
   },
-  {class: 'fas fa-user',
+  {class: 'bi bi-person-fill',
     name:'Profile',
-    href:'../tuiter'
+    href:'/'
   },
-  {class: 'fas fa-comment-dots',
+  {class: 'bi bi-chat-square-dots-fill',
     name:'More',
-    href:'../tuiter'
+    href:'/'
   },
-
+  {class:'bi bi-backspace-reverse-fill',
+    name:'Back to Lab',
+    href:'/'
+  },
 ];
