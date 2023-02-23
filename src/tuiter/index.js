@@ -4,6 +4,7 @@ import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList/followedList.js";
 import {Routes, Route} from "react-router";
 import HomeScreen from "./HomeScreen";
+import PostSummaryList from "./PostSummaryList";
 
 function Tuiter() {
   return (
@@ -16,7 +17,9 @@ function Tuiter() {
           <Routes>
             <Route path=""       element={<ExploreComponent/>}/>
             <Route path="home"    element={<HomeScreen/>}/>
+            <Route path="home/"    element={<HomeScreen/>}/>
             <Route path="explore" element={<ExploreComponent/>}/>
+            <Route path="explore/" element={<ExploreComponent/>}/>
           </Routes>
         </div>
         <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">

@@ -16,7 +16,8 @@ const PostSummaryItem = (
         <div className="row">
           <div className="col-10">
             <div>{post.userName} &#xb7; {post.time}</div>
-            <div className="fw-bolder">{post.topic}</div>
+            <div className="fw-bolder">{post.topic} &nbsp;
+              <i className="bi bi-check-circle-fill text-primary"/></div>
             <div>{post.title}</div>
           </div>
           <div className="col-2">
