@@ -43,3 +43,13 @@
   position: relative;
   top: 5px;
 }
+.wd-avatar-js{
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+.wd-avatar-js2{
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
