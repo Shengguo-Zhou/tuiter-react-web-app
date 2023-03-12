@@ -60,6 +60,7 @@ const PostList = () => {
           </div>
 
         </li>
+
         <li className={"list-group-item"}>
           <div className={"row"}>
             <div className={"col-2"}>

@@ -5,9 +5,9 @@ const SingleIndex = ({
       item = {
         "class": 'bi bi-hash',
         "name": 'Explore',
-        "href": '/tuiter/explore'
+        "href": '/tuiter/home'
       },
-      active = 'explore'
+      active = 'home'
 }) => {
     return(
       <>
