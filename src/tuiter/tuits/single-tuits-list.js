@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./tuits-reducer";
 
 const SingleTuitsList = ({
   tuit = {
@@ -16,6 +18,8 @@ const SingleTuitsList = ({
   "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
   }
 }) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => { dispatch(deleteTuit(id)); }
   return(
       <>
         <div className={"row"}>
@@ -30,7 +34,9 @@ const SingleTuitsList = ({
                 <span className={"text-secondary"}>&nbsp; {tuit.handle} &#8226; {tuit.time}</span>
               </div>
               <div className={"col-2"}>
-                <span className={"text-secondary"} style={{float: "right"}}>&#8226;&#8226;&#8226;&nbsp;&nbsp;</span>
+                <span className={"text-secondary"} style={{float: "right"}}>&#8226;&#8226;&#8226;&nbsp;&nbsp;
+                  <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}/>
+                </span>
               </div>
             </div>
             <div className={"row"}>
