@@ -24,7 +24,8 @@ const SingleTuitsList = ({
       <>
         <div className={"row"}>
           <div className={"col-2"}>
-            <img src={`/images/${tuit.image}`} className={"wd-avatar-js"}/>
+            <img src={`/images/${tuit.image}`} className={"wd-avatar-js"}
+                 style={{height: "64px", width: "64px", borderRadius: "50%"}}/>
           </div>
           <div className={"col-10"}>
             <div className={"row"}>

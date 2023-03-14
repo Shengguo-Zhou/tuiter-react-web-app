@@ -5,6 +5,7 @@ const currentUser = {
   "userName": "NASA",
   "handle": "@nasa",
   "image": "nasa.png",
+  "title": "1000s of Martian colonists being building Mars Base 1, 100s of SpaceX Starships land on Mars after a 6 month journey.",
 };
 
 const templateTuit = {
@@ -29,8 +30,7 @@ const tuitsSlice = createSlice({
       })
     },
     deleteTuit(state, action) {
-      const index = state
-      .findIndex(tuit => tuit._id === action.payload);
+      const index = state.findIndex(tuit => tuit._id === action.payload);
       state.splice(index, 1);
     }
   }

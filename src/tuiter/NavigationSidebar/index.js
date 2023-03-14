@@ -8,6 +8,7 @@ const NavigationSidebar = () => {
       const paths = pathname.split('/')
       let active = paths[2];
       if(active === '' || active === null) active = 'Home';
+      if(active === 'edit-profile') active = 'Profile';
       return (
       <>
         <div className="list-group">

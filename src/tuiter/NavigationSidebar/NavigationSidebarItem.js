@@ -29,7 +29,7 @@ export default [
   },
   {class: 'bi bi-person-fill',
     name:'Profile',
-    href:'/'
+    href:'/tuiter/profile'
   },
   {class: 'bi bi-chat-square-dots-fill',
     name:'More',
