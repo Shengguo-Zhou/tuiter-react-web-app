@@ -28,14 +28,17 @@ const EditProfileComponent = () => {
           </div>
         </div>
 
-        <div className={"row"}><img src={"/images/starship.png"}/></div>
-        <div className={"row"}>
-          <img src={"/images/react.png"}
-               style={{height: "128px", width: "148px", borderRadius: "50%"}}/></div>
+        <div className={"row position-relative"}>
+          <img src={"/images/web.png"}/>
+          <img src={"/images/reactjs.jpeg"}
+               className={"position-absolute top-100 translate-middle"}
+               style={{height: "128px", width: "146px", borderRadius: "50%", marginLeft: "100px"}}/>
+        </div>
 
         <textarea value={firstName}
                   placeholder="Name"
-                  className="form-control border-0"
+                  className="form-control border-1"
+                  style={{marginTop: "75px"}}
                   onChange={(event) => setFirstName(event.target.value)}>
         </textarea>
 
