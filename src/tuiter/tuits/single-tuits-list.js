@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuit, countLike} from "./tuits-reducer";
 
 const SingleTuitsList = ({
   tuit = {
@@ -10,7 +10,7 @@ const SingleTuitsList = ({
   "time": "2h",
   "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
   "image": "news1.png",
-  "liked": true,
+  "liked": false,
   "replies": 123,
   "retuits": 432,
   "likes": 2345,
@@ -20,6 +20,7 @@ const SingleTuitsList = ({
 }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => { dispatch(deleteTuit(id)); }
+  const countLikeHandler = (id) => { dispatch(countLike(id)); }
   return(
       <>
         <div className={"row"}>
@@ -54,10 +55,14 @@ const SingleTuitsList = ({
                 <i className="bi bi-box-arrow-up-right"/>
                 <span className="wd-gray">&nbsp; &nbsp; {tuit.retuits}</span>
               </div>
+
               <div className="col-3">
-                <i className="bi bi-heart-fill"/>
-                <span className="wd-gray">&nbsp; &nbsp; {tuit.likes}</span>
+                <i className={`bi ${!tuit.liked? "bi-heart-fill text-danger" : "bi-heart"}`}
+                   onClick={() => countLikeHandler(tuit._id)}
+                   id="likeClick"/>
+                <span className="wd-gray" id="likeClick">&nbsp; &nbsp; {tuit.likes}</span>
               </div>
+
               <div className="col-3">
                 <i className="bi bi-share-fill"/>
               </div>

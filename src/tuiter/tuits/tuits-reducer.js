@@ -12,7 +12,7 @@ const templateTuit = {
   ...currentUser,
   "topic": "Space",
   "time": "2h",
-  "liked": false,
+  "liked": true,
   "replies": 0,
   "retuits": 0,
   "likes": 0,
@@ -32,10 +32,16 @@ const tuitsSlice = createSlice({
     deleteTuit(state, action) {
       const index = state.findIndex(tuit => tuit._id === action.payload);
       state.splice(index, 1);
-    }
+    },
+    countLike(state, action) {
+      const index = state.findIndex(tuit => tuit._id === action.payload);
+      if(state[index].liked) state[index].likes++;
+      else state[index].likes--;
+      state[index].liked = !state[index].liked;
+    },
   }
 
 });
 
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, countLike} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
