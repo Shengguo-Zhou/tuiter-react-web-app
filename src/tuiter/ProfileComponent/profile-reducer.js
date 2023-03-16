@@ -20,17 +20,20 @@ const profileReducer = createSlice({
   initialState: profile,
   reducers: {
     updateProfileFirstName(state, action){
-      // state.firstName = action.payload.firstName;
-      // state.lastName = action.payload.lastName;
-      // state.handle = "@" + action.payload.firstName + action.payload.lastName;
       // state.bio = action.payload.bio;
       // state.website = action.payload.website;
       // state.location = action.payload.location;
       // state.dateOfBirth = action.payload.dateOfBirth;
       state.firstName = action.payload;
     },
+    updateProfileLastName(state, action){
+      state.lastName = action.payload;
+    },
+    updateProfileHandler(state, action){
+      state.handle = action.payload;
+    },
   }
 });
 
 export default profileReducer.reducer;
-export const {updateProfileFirstName} = profileReducer.actions;
+export const {updateProfileFirstName, updateProfileLastName, updateProfileHandler} = profileReducer.actions;
