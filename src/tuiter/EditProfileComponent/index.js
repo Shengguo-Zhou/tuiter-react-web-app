@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {updateProfileFirstName, updateProfileLastName, updateProfileHandler} from "../ProfileComponent/profile-reducer";
+import {updateProfileFirstName, updateProfileLastName, updateProfileDob,
+  updateProfileHandler, updateProfileBio, updateProfileWebsite, updateProfileLocation} from "../ProfileComponent/profile-reducer";
 
 
 const EditProfileComponent = () => {
@@ -18,10 +19,10 @@ const EditProfileComponent = () => {
     dispatch(updateProfileFirstName(firstName));
     dispatch(updateProfileLastName(lastName));
     dispatch(updateProfileHandler(handler));
-    // dispatch(updateProfileBio(bio));
-    // dispatch(updateProfileWebsite(website));
-    // dispatch(updateProfileLocation(location));
-    // dispatch(updateProfileDob(dob));
+    dispatch(updateProfileBio(bio));
+    dispatch(updateProfileWebsite(website));
+    dispatch(updateProfileLocation(location));
+    dispatch(updateProfileDob(dob));
   };
   return(
       <>
@@ -56,6 +57,7 @@ const EditProfileComponent = () => {
                     className="form-control border-1"
                     onChange={(event) => setFirstName(event.target.value)}>
           </textarea>
+
           <label htmlFor={"lastname"} style={{marginBottom: "5px", marginTop: "20px"}} className={"text-secondary"}>LastName: </label>
           <textarea value={lastName}
                     id={"lastname"}
@@ -63,9 +65,54 @@ const EditProfileComponent = () => {
                     className="form-control border-1"
                     onChange={(event) => setLastName(event.target.value)}>
           </textarea>
+
+          <label htmlFor={"bio"} style={{marginBottom: "5px", marginTop: "20px"}} className={"text-secondary"}>Bio: </label>
+          <textarea value={bio}
+                    id={"bio"}
+                    placeholder="Bio"
+                    className="form-control border-1"
+                    onChange={(event) => setBio(event.target.value)}>
+          </textarea>
+
+          <label htmlFor={"website"} style={{marginBottom: "5px", marginTop: "20px"}} className={"text-secondary"}>Website: </label>
+          <textarea value={website}
+                    id={"website"}
+                    placeholder="Website"
+                    className="form-control border-1"
+                    onChange={(event) => setWebsite(event.target.value)}>
+          </textarea>
+
+          <label htmlFor={"location"} style={{marginBottom: "5px", marginTop: "20px"}} className={"text-secondary"}>Location: </label>
+          <textarea value={location}
+                    id={"location"}
+                    placeholder="Location"
+                    className="form-control border-1"
+                    onChange={(event) => setLocation(event.target.value)}>
+          </textarea>
+
+          <label htmlFor={"dob"} style={{marginBottom: "5px", marginTop: "20px"}} className={"text-secondary"}>Birth date &#183;
+            <span className={"text-primary"}>Edit</span></label>
+          <textarea value={dob}
+                    id={"dob"}
+                    placeholder="Date of Birth"
+                    className="form-control border-1"
+                    onChange={(event) => setDob(event.target.value)}>
+          </textarea>
         </div>
-
-
+        <div className={"row"}>
+          <div className={"col-10"}>
+          <div style={{marginBottom: "5px", marginTop: "20px"}} className={"fs-5"}>Switch to professional </div>
+          </div>
+          <div className={"col-2"}>
+            <i className="bi bi-arrow-down-right-circle float-end"
+                style={{marginRight: "10px", marginTop: "22px"}}/>
+          </div>
+        </div>
+        <div className={"row"}> &nbsp; </div>
+        <div className={"row"}> &nbsp; </div>
+        <div className={"row"}> &nbsp; </div>
+        <div className={"row"}> &nbsp; </div>
+        <div className={"row"}> &nbsp; </div>
       </>
   );
 }

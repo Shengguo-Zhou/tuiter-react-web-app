@@ -20,10 +20,6 @@ const profileReducer = createSlice({
   initialState: profile,
   reducers: {
     updateProfileFirstName(state, action){
-      // state.bio = action.payload.bio;
-      // state.website = action.payload.website;
-      // state.location = action.payload.location;
-      // state.dateOfBirth = action.payload.dateOfBirth;
       state.firstName = action.payload;
     },
     updateProfileLastName(state, action){
@@ -32,8 +28,21 @@ const profileReducer = createSlice({
     updateProfileHandler(state, action){
       state.handle = action.payload;
     },
+    updateProfileBio(state, action){
+      state.bio = action.payload;
+    },
+    updateProfileWebsite(state, action){
+      state.website = action.payload;
+    },
+    updateProfileLocation(state, action){
+      state.location = action.payload;
+    },
+    updateProfileDob(state, action){
+      state.dateOfBirth = action.payload;
+    }
   }
 });
 
 export default profileReducer.reducer;
-export const {updateProfileFirstName, updateProfileLastName, updateProfileHandler} = profileReducer.actions;
+export const {updateProfileFirstName, updateProfileLastName, updateProfileDob,
+  updateProfileHandler, updateProfileBio, updateProfileWebsite, updateProfileLocation} = profileReducer.actions;
