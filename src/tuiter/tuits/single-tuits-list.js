@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import {deleteTuit, countLike} from "./tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const SingleTuitsList = ({
   tuit = {
@@ -19,7 +20,7 @@ const SingleTuitsList = ({
   }
 }) => {
   const dispatch = useDispatch();
-  const deleteTuitHandler = (id) => { dispatch(deleteTuit(id)); }
+  const deleteTuitHandler = (id) => { dispatch(deleteTuitThunk(id)); }
   const countLikeHandler = (id) => { dispatch(countLike(id)); }
   return(
       <>
@@ -57,13 +58,25 @@ const SingleTuitsList = ({
               </div>
 
               <div className="col-3">
-                <i className={`bi ${!tuit.liked? "bi-heart-fill text-danger" : "bi-heart"}`}
-                   onClick={() => countLikeHandler(tuit._id)}
-                   id="likeClick"/>
-                <span className="wd-gray" id="likeClick">&nbsp; &nbsp; {tuit.likes}</span>
+                <div>
+                  <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit, likes: tuit.likes + 1}))}
+                     className="bi bi-heart-fill me-2 text-danger"/>
+                  {tuit.likes}
+                </div>
               </div>
 
-              <div className="col-3">
+              <div className="col-2">
+                <div>
+                  <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit, dislikes: tuit.dislikes + 1}))}
+                     className="bi bi-hand-thumbs-down-fill me-2"
+                     style={{color : "black"}}/>
+                  {tuit.dislikes}
+                </div>
+              </div>
+
+              <div className="col-1">
                 <i className="bi bi-share-fill"/>
               </div>
             </div>

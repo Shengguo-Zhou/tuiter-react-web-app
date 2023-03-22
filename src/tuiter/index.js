@@ -13,7 +13,7 @@ import EditProfileComponent from "./EditProfileComponent/index.js"
 import profileReducer from "./ProfileComponent/profile-reducer";
 const store = configureStore({reducer: {
     who: whoReducer,
-    tuits: tuitsReducer,
+    tuitsData: tuitsReducer,
     profile: profileReducer,
 }});
 
